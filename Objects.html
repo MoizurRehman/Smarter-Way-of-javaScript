@@ -1,0 +1,43 @@
+ <html>
+	<head>
+		<title>
+		javascript
+		</title>
+	</head>
+<body>
+<div id="a"></div>
+<script>
+var plani1 = {
+amount:30,
+account:"Basic",
+month:[7,8],
+calculate : function(discount){
+var b = this.amount;
+var da = new Date();
+da.setDate(7);
+var newd = da.getDate();
+for (var i = 0 ; i<this.month.length;i++)
+	{
+		if(newd===this.month[i])
+		{
+			da = this.amount*discount;
+			break;
+		}	
+	}
+return da*12;
+},
+cal : function ()
+{
+var a = this.calculate(0.8);
+var b = document.createElement("h1");
+var c = document.createTextNode(a);
+b.appendChild(c)
+var d = document.getElementById("a");
+d.appendChild(b);
+}
+};
+
+</script>
+<button onClick="plani1.cal();">20% discount</button>
+</body>
+</html>
