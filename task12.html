@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Task 12 Temperatur Conversion</h1>
+    Enter a Temperature in Fahrenheit: <input type="number" id="f"><input value="Convert Temperatur in Celsius" type="submit" onclick="celsius();"><br>
+    Enter a Temperature in Celsius:<input type="number" id="t"><input type="submit" value="Convert Temperatur in Fahrenheit" onclick="fahrenheit();">
+    <script>
+
+    function celsius()
+    {
+        var f = document.getElementById("f").value;
+        alert("Temperatur in Celsius is = "+((5/9)*(f-32))+"C");
+    }
+
+    function fahrenheit()
+    {
+        var c = document.getElementById("t").value;
+        alert("Temperatur in Celsius is = "+((9/5)*c + 32)+"F");
+    }
+    </script>
+</body>
+</html>

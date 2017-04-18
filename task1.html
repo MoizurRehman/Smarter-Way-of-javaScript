@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JavaScript</title>
+</head>
+<body>
+    <h1>Display The Current Day and Time</h1>
+    <script>
+        var da = new Date();
+        var arr = ["sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+        var dat = da.getDay();
+        var shift = (da.getHours()>=12 ? "PM" :"AM");
+        document.write("Current Day is = "+arr[dat]+"<br>");
+        document.write("Current Time is = "+da.getHours()+shift+" : "+da.getMinutes()+" : "+da.getSeconds());
+        
+    </script>
+</body>
+</html>

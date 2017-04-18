@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Task 07 find sunday is being a sunday between 2014 and 2050</h1>
+    <script>
+    for (var i =2014; i<=2050;i++)
+        {
+            var d = new Date(i,0,1);
+            if(d.getDay()==0)
+            {
+                document.write("In "+i+" year "+"1st jan is a sunday<br>")
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+   <!--Take input numbers-->
+    First Number<input type="number" id = "First"><br><br>
+
+    Second Number<input type="number" id = "second"><br><br>
+
+    <!--Button-->
+    <input type="submit" onclick="multiply();" value="Multiply">
+    &nbsp;&nbsp;
+    <input type="submit" onclick="div();" value="Divide">
+
+    <script>
+        
+        function multiply(){
+            var number1 = document.getElementById("First").value;
+            var number2 = document.getElementById("second").value;
+            alert("Multiplication of "+number1+" and "+number2+" is = "+(number1*number2));
+        }
+
+        function div(){
+            var number1 = document.getElementById("First").value;
+            var number2 = document.getElementById("second").value;
+            alert("Division of "+number1+" and "+number2+" is = "+(number1/number2));
+        }
+    </script>
+</body>
+</html>

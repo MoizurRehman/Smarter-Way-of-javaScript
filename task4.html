@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Task 4 Find area of Triangel</h1>
+    <dic id="area"></div>
+    <script>
+    var a = Number(prompt("Enter a first side of triangle"));
+    var b = Number(prompt("Enter a second side of triangle"));
+    var c = Number(prompt("Enter a third side of triangle"));
+    var s = (a+b+c)/2;
+    var area = Math.sqrt(s*(s-a)*(s-b)*(s-c));
+
+    var tar = document.getElementById("area");
+    var h2 = document.createElement("h2");
+    var textNode = document.createTextNode(area);
+    h2.appendChild(textNode);
+    tar.appendChild(h2);
+    </script>
+</body>
+</html>
